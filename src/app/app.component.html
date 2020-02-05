@@ -1,12 +1,30 @@
 <div class="body">
-  <div class="header">
-    <h2 class="logo-portal">Portal</h2>
-    <h2 class="logo-roms">Roms</h2>
-    <input class="search" type="search" placeholder="Search your device">
-    <div class="menu-header">
-      <p>Home</p>
-      <p>About Us</p>
-      <p>Contact Us</p>
+  <app-menu></app-menu>
+      <div class="menu">
+        <p (click)='Asus()'>Asus</p>
+        <p (click)='Xiaomi()'>Xiaomi </p>
+        <p (click)='Samsung()'>Samsung </p>
+        <p (click)='Lg()'>LG </p>
+        <p (click)='Oppo()'>Oppo </p>
+        <p (click)='Vivo()'>Vivo </p>
+        <p (click)='Hawaei()'>Hawaei </p>
+        <p (click)='Quantum()'>Quantum</p>
+        <p (click)='RazerPhone()'>Razer Phone</p>
+        <p (click)='Sony()'>Sony</p>
+        <p (click)='Realme()'>Realme</p>
+        <p (click)='ZUK()'>ZUK</p>
+        <p (click)='LeEco()'>LeEco</p>
+        <p (click)='Oneplus()'>Oneplus</p>
+        <p (click)='Google()'>Google</p>
+        <p (click)='Motorola()'>Motorola</p>
+        <p (click)='NavCity()'>NavCity</p>
+        <p (click)='Lenovo()'>Lenovo</p>
+      </div>
+
+    <h1 class="title">{{title}}</h1>
+
+    <div class="app">
+      <app-asus></app-asus>
     </div>
-  </div>
+    
 </div>

@@ -1,30 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.body{
-    margin-top: -10px;
-    margin-left: -10px;
-    background-image: linear-gradient(to bottom right, black, rgb(44, 0, 0));
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    width: 99vw;
-    height: 100vw;
-}
-.title{
-    position: relative;
-    color: rgb(133, 133, 133);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   ;
-    margin-left: 20%;
-    bottom: 90%;
-    text-align: center;
-}
 .header{
     position: fixed;
     background-color: rgb(32, 32, 32);
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
     height: 5vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     user-select: none;
@@ -32,7 +10,7 @@
 .logo-portal{
     position: absolute;
     float: left;
-    top: 25%;
+    top: 5%;
     left: 2%;
     transform: scale(1.8);
     color: rgb(71, 71, 71);
@@ -40,7 +18,7 @@
 .logo-roms{
     position: absolute;
     float: left;
-    top: 25%;
+    top: 5%;
     left: 9%;
     transform: scale(1.8);
     color: rgb(255, 0, 0);
@@ -65,7 +43,7 @@
     position: relative;
     color: white;
     left: 0%;
-    top: 35%;
+    top: 20%;
 }
 .menu-header p{
     position: relative;
@@ -81,32 +59,4 @@
 }
 .menu-header p:hover{
     background-color: rgb(41, 41, 41);
-}
-
-.menu{
-    position: relative;
-    width: 20vw;
-    height: 100%;   
-    background-color: rgb(19, 19, 19);
-    user-select: none;
-}
-.menu p{
-    position: relative;
-    top: 20%;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 30px;
-    color: white;
-    cursor: pointer;
-    height: 40px;
-    outline: none;
-}
-.menu p:hover{
-    background-color: rgb(10, 10, 10);
-}
-
-.app{
-    position: absolute;
-    bottom: 44.4vw;
-    left: 20%;
 }

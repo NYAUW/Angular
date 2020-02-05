@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    position: absolute;
+    z-index: 2;
+    top: 20vw;
+    left: 3vw;
+    width: 79vw;
+    height: 95vw;
+    margin-right: -10;
+}
+.devices{
+    float: left;
+}
+
+.a{
+    position: relative;
+    float: left;
+}
