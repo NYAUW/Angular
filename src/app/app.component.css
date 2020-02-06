@@ -84,8 +84,7 @@
 }
 
 .menu{
-    position: relative;
-    width: 20vw;
+    position: relative; 
     height: 100%;   
     background-color: rgb(19, 19, 19);
     user-select: none;
@@ -109,4 +108,10 @@
     position: absolute;
     bottom: 44.4vw;
     left: 20%;
+}
+a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    height: 40px;
 }

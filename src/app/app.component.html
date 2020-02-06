@@ -1,7 +1,7 @@
 <div class="body">
   <app-menu></app-menu>
       <div class="menu">
-        <p (click)='Asus()'>Asus</p>
+        <p (click)='Asus()'><a routerLink="/asus">Asus</a></p>
         <p (click)='Xiaomi()'>Xiaomi </p>
         <p (click)='Samsung()'>Samsung </p>
         <p (click)='Lg()'>LG </p>
@@ -24,7 +24,7 @@
     <h1 class="title">{{title}}</h1>
 
     <div class="app">
-      <app-asus></app-asus>
+      <router-outlet></router-outlet>
     </div>
     
 </div>
