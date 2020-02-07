@@ -10,8 +10,11 @@ import { AsusComponent } from './asus/asus.component';
 export class AppComponent {
   title = 'PortalRoms';
 
+  Home(){
+    this.title = 'PortalRoms';
+  }
   Asus() {
-    this.title = 'Asus     ';
+    this.title = 'Asus';
   }
 
   Xiaomi() {

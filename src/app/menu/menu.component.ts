@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit {
   ngOnInit(){
 
   }
-  title = '';
+  title = 'PortalRoms';
 
   Home(){
     this.title = 'PortalRoms';
