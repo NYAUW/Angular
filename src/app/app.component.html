@@ -1,33 +1,43 @@
 <div class="body">
   <app-menu></app-menu>
-      <div class="menu">
-        <p (click)='Asus()'><a routerLink="/asus">Asus</a></p>
-        <p (click)='Xiaomi()'><a routerLink="/xiaomi">Xiaomi</a></p>
-        <p (click)='Samsung()'><a routerLink="/samsung">Samsung</a></p>
-        <p (click)='Lg()'><a routerLink="/lg">LG</a></p>
-        <p (click)='Oppo()'><a routerLink="/oppo">Oppo</a></p>
-        <p (click)='Vivo()'><a routerLink="/vivo">Vivo</a></p>
-        <p (click)='Hawaei()'><a routerLink="/hawaei">Hawaei</a></p>
-        <p (click)='Quantum()'><a routerLink="/quantum">Quantum</a></p>
-        <p (click)='RazerPhone()'><a routerLink="/razer">Razer Phone</a></p>
-        <p (click)='Sony()'><a routerLink="/sony">Sony</a></p>
-        <p (click)='Realme()'><a routerLink="/realme">Realme</a></p>
-        <p (click)='ZUK()'><a routerLink="/zuk">ZUK</a></p>
-        <p (click)='LeEco()'><a routerLink="/leeco">LeEco</a></p>
-        <p (click)='Oneplus()'><a routerLink="/oneplus">Oneplus</a></p>
-        <p (click)='Google()'><a routerLink="/google">Google</a></p>
-        <p (click)='Motorola()'><a routerLink="/motorola">Motorola</a></p>
-        <p (click)='NavCity()'><a routerLink="/navcity">NavCity</a></p>
-        <p (click)='Lenovo()'><a routerLink="/lenovo">Lenovo</a></p>
-      </div>
-      <div class="menu-buy">
-       <i class="fas fa-shopping-cart"><p>Carrinho</p></i>       <i class="fas fa-wallet"><p>Carteira</p></i>
-      </div>
-
-    <h1 class="title">{{title}}</h1>
-
-    <div class="app">
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-caret-square-down" id="btn"></i>
+  </label>
+  <div class="menu">
+    <p (click)='Asus()'><a routerLink="/asus">Asus</a></p>
+    <p (click)='Xiaomi()'><a routerLink="/xiaomi">Xiaomi</a></p>
+    <p (click)='Samsung()'><a routerLink="/samsung">Samsung</a></p>
+    <p (click)='Lg()'><a routerLink="/lg">LG</a></p>
+    <p (click)='Oppo()'><a routerLink="/oppo">Oppo</a></p>
+    <p (click)='Vivo()'><a routerLink="/vivo">Vivo</a></p>
+    <p (click)='Hawaei()'><a routerLink="/hawaei">Hawaei</a></p>
+    <p (click)='Quantum()'><a routerLink="/quantum">Quantum</a></p>
+    <p (click)='RazerPhone()'><a routerLink="/razer">Razer Phone</a></p>
+    <p (click)='Sony()'><a routerLink="/sony">Sony</a></p>
+    <p (click)='Realme()'><a routerLink="/realme">Realme</a></p>
+    <p (click)='ZUK()'><a routerLink="/zuk">ZUK</a></p>
+    <p (click)='LeEco()'><a routerLink="/leeco">LeEco</a></p>
+    <p (click)='Oneplus()'><a routerLink="/oneplus">Oneplus</a></p>
+    <p (click)='Google()'><a routerLink="/google">Google</a></p>
+    <p (click)='Motorola()'><a routerLink="/motorola">Motorola</a></p>
+    <p (click)='NavCity()'><a routerLink="/navcity">NavCity</a></p>
+    <p (click)='Lenovo()'><a routerLink="/lenovo">Lenovo</a></p>
+  </div>
+  <div class="menu-buy">
+    <i class="fas fa-shopping-cart">
+      <p>Carrinho</p>
+    </i>
+    <i class="fas fa-wallet">
+    <p (click)='Carteira()'>Carteira {{carteira}}</p>
+    </i>
+    <i class="fas fa-heart">
+      <p>Favoritos</p>
+    </i>
+  </div>
+  <h1 class="title">{{title}}</h1>
+  <div class="app">
     <router-outlet></router-outlet>
-    </div>
-    
+  </div>
+
 </div>

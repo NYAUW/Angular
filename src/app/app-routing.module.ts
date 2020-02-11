@@ -18,6 +18,7 @@ import { MotorolaComponent } from './motorola/motorola.component';
 import { GoogleComponent } from './google/google.component';
 import { NavcityComponent } from './navcity/navcity.component';
 import { LenovoComponent } from './lenovo/lenovo.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 const routes: Routes = [
@@ -38,7 +39,8 @@ const routes: Routes = [
   {path: 'motorola', component: MotorolaComponent},
   {path: 'google', component: GoogleComponent},
   {path: 'navcity', component: NavcityComponent},
-  {path: 'lenovo', component: LenovoComponent}
+  {path: 'lenovo', component: LenovoComponent},
+  {path: 'about-us', component: AboutUsComponent}
 ];
 
 @NgModule({

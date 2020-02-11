@@ -1,12 +1,14 @@
 <div class="header">
-  <h2 class="logo-portal">Portal</h2>
-  <h2 class="logo-roms">Roms</h2>
+  <div class="logo">
+    <h2>Portal</h2>
+    <h2 id="roms">Roms</h2>
+  </div>
   <input class="search" type="search" placeholder="Search your device">
   <div class="menu-header">
     <a href="">
       <p (click)='Home()'>Home</p>
     </a>
-    <a href="">
+    <a href="" routerLink="/about-us">
       <p (click)='AboutUs()'>About Us</p>
     </a>
     <a href="">

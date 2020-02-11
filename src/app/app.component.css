@@ -108,6 +108,7 @@
     outline: none;
 }
 .menu p:hover{
+    transition: 0.9s;
     background-color: rgb(10, 10, 10);
 }
 
@@ -116,6 +117,7 @@
     bottom: 85vw;
     left: 22%;
     width: 75vw;
+    transition: 1.7s;
 
 }
 a{
@@ -129,17 +131,22 @@ a{
     z-index: 1;
     top: 12%;
     height: 3vw;
-    left: 21vw;
-    color: rgb(150, 12, 12);
+    left: 45vw;
+    color: rgb(192, 192, 192);
+    cursor: pointer;
+    transition: 3s;
 }
-.menu-buy:hover{
+.menu-buy i:hover{
     transform: scale(1.1);
     cursor: pointer;
+    transition: 0.5s;
+    color: rgba(245, 88, 122, 0.603);
 }
 .menu-buy i{
     float: left;
     top: 10%;
-    position: absolute;
+    margin-right: 10vw;
+    position: relative;
 }
 .menu-buy p{
     position: absolute;
@@ -149,7 +156,11 @@ a{
     color: rgb(90, 90, 90);
 }
 
-@media screen and (max-width: 960px) {
+#check{
+    display: none;
+}
+
+@media screen and (max-device-width: 960px) {
     *{
         margin: 0;
         padding: 0;
@@ -159,29 +170,21 @@ a{
         margin: -10px;
         background-size: 100%;
         background-image: linear-gradient(to top left, rgb(110, 1, 1), black);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-color: #00011f;
         max-width: 102.5%;
-        height: auto;
+        height: 300%;
     }
     .title{
         position: absolute;
         color: rgb(133, 133, 133);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   ;
-        margin-left: 45%;
-        bottom: 85%;
-        text-align: center;
+        bottom: 90%;
+        left: 30%;
     }
 
     .menu{
         position: relative; 
-        height: 100%;
-        width: 20%;   
+        height: 100%; 
+        display: none;
         background-color: rgb(19, 19, 19);
         user-select: none;
     }
@@ -202,8 +205,8 @@ a{
     
     .app{
         position: absolute;
-        bottom: 90%;
-        left: 20%;
+        bottom: 85%;
+        left: 16%;
     }
     a{
         position: relative;
@@ -211,67 +214,87 @@ a{
         text-decoration: none;
         height: 40px;
     }
-    @media screen and (max-width: 1360px) {
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .body{
-            padding: -10px;
-            margin: -10px;
-            background-size: 100%;
-            background-image: linear-gradient(to top left, rgb(110, 1, 1), black);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-color: #00011f;
-            max-width: 103.5%;
-            height: 400.5vw;
-        }
-        .title{
-            position: absolute;
-            color: rgb(133, 133, 133);
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   ;
-            margin-left: -15%;
-            bottom: 95%;
-            text-align: center;
-        }
+
+    .menu-buy{
+        position: fixed;
+        z-index: 1;
+        top: 12%;
+        height: 3vw;
+        left: 40vw;
+        color: rgb(192, 192, 192);
+        cursor: pointer;
+        transition: 3s;
+    }
+    .menu-buy i:hover{
+        transform: scale(0.6);
+        cursor: pointer;
+        transition: 0.5s;
+        color: rgba(245, 88, 122, 0.603);
+    }
+    .menu-buy i{
+        float: left;
+        transform: scale(0.5);
+        right: 30%;
+        top: -10vw;
+        margin-left: 10px;
+        position: relative;
+    }
+    .menu-buy p{
+        position: absolute;
+        left: 150%;
+        bottom: 10%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(90, 90, 90);
+    }
     
-        .menu{
-            position: relative; 
-            height: 100%;
-            width: 20%;   
-            background-color: rgb(19, 19, 19);
-            user-select: none;
-        }
-        .menu p{
-            position: relative;
-            top: 5%;
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-bottom: 30px;
-            color: white;
-            cursor: pointer;
-            height: 40px;
-            outline: none;
-        }
-        .menu p:hover{
-            background-color: rgb(10, 10, 10);
-        }
+    #check{
+        display: none;
+    }
+    
+    label #btn, label #close{
+        position: absolute;
+        cursor: pointer;
+        display: inline-block;
+        cursor: pointer;
+        padding: 5px;
+    }
         
-        .app{
-            position: absolute;
-            bottom: 90%;
-            left: 20%;
-        }
-        a{
-            position: relative;
-            color: white;
-            text-decoration: none;
-            height: 40px;
-        }
-    }    
+    label #btn{
+        cursor: pointer;
+        left: 2.5%;
+        top: 2.5%;
+        z-index: 9;
+        color: white;
+        border-radius: 20px;
+    }
+    
+    label #close{
+        cursor: pointer;
+        display: none;
+        left: 2.5%;
+        top: 2.5%;
+        color: red;
+        border-radius: 20px;
+    }  
+    #check:checked ~ .menu{
+        position: relative; 
+        display: block;
+        z-index: 2;
+        width: 100%;
+        top: auto;
+        background-color: rgb(2, 2, 2);
+        user-select: none;
+     }
+     #check:checked ~ label #btn:hover{
+        transition: 0.8s;
+        transform: rotate(180deg);
+    }  
+    #check:disabled label #btn:hover{
+        transition: 0.8s;
+        transform: rotate(180deg);  
+    }
+
+    label #btn:hover{
+        transition: 0.8s;  
+    }
 }

@@ -12,7 +12,11 @@ export class MenuComponent implements OnInit {
 
   }
   title = 'PortalRoms';
+  carteira = 5000;
 
+  Carteira(){
+    this.carteira
+  }
   Home(){
     this.title = 'PortalRoms';
   }

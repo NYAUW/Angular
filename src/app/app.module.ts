@@ -23,6 +23,8 @@ import { MotorolaComponent } from './motorola/motorola.component';
 import { NavcityComponent } from './navcity/navcity.component';
 import { LenovoComponent } from './lenovo/lenovo.component';
 import { HomeComponent } from './home/home.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { HomeComponent } from './home/home.component';
     MotorolaComponent,
     NavcityComponent,
     LenovoComponent,
-    HomeComponent
+    HomeComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

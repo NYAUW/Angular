@@ -9,6 +9,17 @@ import { AsusComponent } from './asus/asus.component';
 })
 export class AppComponent {
   title = 'PortalRoms';
+  
+  carteira = 5000;
+
+   Carteira(){
+    if(this.carteira <= 0){
+      alert("Saldo é Insuficiente");
+    }
+    else{
+    this.carteira = this.carteira - 500;
+    }
+  }
 
   Home(){
     this.title = 'PortalRoms';
