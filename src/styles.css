@@ -2,9 +2,24 @@
     margin: -0.1;
     padding: 0;
 }
+body {
+    padding: 0;
+    margin: 0;
+    background-size: 100%;
+    background-image: linear-gradient(to top left, rgb(110, 1, 1), black);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: #00011f;
+    max-width: 100%;
+    height: auto;
+}
 .body{
     position: absolute;
-
+    z-index: 1;
     width: 100%;
     height: 100%;
 }
@@ -20,16 +35,39 @@
     height: 100px;
     color: white;
     text-decoration: none;
-    margin-left: 5vw;
-    margin-bottom: 100px;
+    margin-left: 6vw;
+    margin-bottom: 150px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.devices a:hover{
-    transform: scale(1.2);
-    transition: 0.3s;
 }
 .devices p{
     position: relative;
     text-align: center;
+    user-select: none;
+}
+.devices a i{
+    position: absolute;
+    top: 40%;
+    left: 40.5%;
+    color: rgb(250, 221, 221);
+}
+.devices a i:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 0.5s;
+    color: red;
+}
+.devices a #valor{
+    position: absolute;
+    color: rgb(187, 186, 186);
+    margin-top: 20px;
+    left: 35%;
+    top: 145%;
+    cursor: pointer;
+}
+
+.devices a #valor i{
+    position: absolute;
+    left: -45%;
+    top: 20%;
 }
 

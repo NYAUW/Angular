@@ -40,7 +40,6 @@ const routes: Routes = [
   {path: 'google', component: GoogleComponent},
   {path: 'navcity', component: NavcityComponent},
   {path: 'lenovo', component: LenovoComponent},
-  {path: 'about-us', component: AboutUsComponent}
 ];
 
 @NgModule({

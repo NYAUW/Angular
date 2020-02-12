@@ -8,92 +8,100 @@ import { AsusComponent } from './asus/asus.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PortalRoms';
-  
-  carteira = 5000;
 
-   Carteira(){
-    if(this.carteira <= 0){
+  carteira = 5000;
+  public Carteira(): void {
+
+    if (this.carteira <= 0) {
       alert("Saldo é Insuficiente");
     }
-    else{
-    this.carteira = this.carteira - 500;
+    else {
+      this.carteira = this.carteira - 500;
     }
+  }  
+
+  public AddCarteira(){
+    
+  this.carteira += + 1000; 
+
   }
 
-  Home(){
-    this.title = 'PortalRoms';
-  }
-  Asus() {
-    this.title = 'Asus';
-  }
+title = 'PortalRoms';
 
-  Xiaomi() {
-    this.title = 'Xiaomi';
-  }
 
-  Samsung(){
-    this.title = 'Samsung';
-  }
+Home(){
+  this.title = 'PortalRoms';
+}
+Asus() {
+  this.title = 'Asus';
+}
 
-  Lg(){
-    this.title = 'Life is Good';
-  }
+Xiaomi() {
+  this.title = 'Xiaomi';
+}
 
-  Oppo(){
-    this.title = 'Oppo';
-  }
+Samsung(){
+  this.title = 'Samsung';
+}
 
-  Vivo() {
-    this.title = 'Vivo';
-  }
+Lg(){
+  this.title = 'Life is Good';
+}
 
-  Hawaei() {
-    this.title = 'Hawaei';
-  }
+Oppo(){
+  this.title = 'Oppo';
+}
 
-  Quantum(){
-    this.title = 'Quantum';
-  }
+Vivo() {
+  this.title = 'Vivo';
+}
 
-  RazerPhone(){
-    this.title = 'Razer';
-  }
+Hawaei() {
+  this.title = 'Hawaei';
+}
 
-  Sony(){
-    this.title = 'Contact Us';
-  }
+Quantum(){
+  this.title = 'Quantum';
+}
 
-  Realme() {
-    this.title = 'Realme';
-  }
+RazerPhone(){
+  this.title = 'Razer';
+}
 
-  ZUK() {
-    this.title = 'ZUK';
-  }
+Sony(){
+  this.title = 'Contact Us';
+}
 
-  LeEco(){
-    this.title = 'LeEco';
-  }
+Realme() {
+  this.title = 'Realme';
+}
 
-  Oneplus(){
-    this.title = 'Oneplus';
-  }
+ZUK() {
+  this.title = 'ZUK';
+}
 
-  Google(){
-    this.title = 'Google';
-  }
+LeEco(){
+  this.title = 'LeEco';
+}
 
-  Motorola() {
-    this.title = 'Motorola';
-  }
+Oneplus(){
+  this.title = 'Oneplus';
+}
 
-  NavCity() {
-    this.title = 'NavCity';
-  }
+Google(){
+  this.title = 'Google';
+}
 
-  Lenovo(){
-    this.title = 'Lenovo';
-  }
+Motorola() {
+  this.title = 'Motorola';
+}
+
+NavCity() {
+  this.title = 'NavCity';
+}
+
+Lenovo(){
+  this.title = 'Lenovo';
+}
 
 }
