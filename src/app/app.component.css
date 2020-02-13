@@ -76,6 +76,8 @@
 .menu{
     position: relative; 
     top: auto;
+    z-index: 4;
+    left: -7px;
     height: 190%;
     width: 20%;   
     background-color: rgb(19, 19, 19);
@@ -146,6 +148,7 @@ a{
 .menu-buy #saldo{
     position: absolute;
     right: 125%;
+    z-index: 0;
     float: center;
     color: green;
 }
@@ -165,11 +168,21 @@ a{
     }
     .body{
         padding: -10px;
-        margin: -10px;
-        background-size: 100%;
-        background-image: linear-gradient(to top left, rgb(110, 1, 1), black);
-        max-width: 102.5%;
-        height: 300%;
+        background: linear-gradient(-45deg, #35031d, #7a0000, #310910, #550423);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        }
+        
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
     .title{
         position: absolute;
@@ -181,7 +194,7 @@ a{
 
     .menu{
         position: relative; 
-        height: 100%; 
+        height: 210%; 
         display: none;
         background-color: rgb(19, 19, 19);
         user-select: none;
@@ -304,19 +317,29 @@ a{
         padding: 0;
     }
     .body{
-        padding: -10px;
-        margin: -10px;
-        background-size: 100%;
-        background-image: linear-gradient(to top left, rgb(110, 1, 1), black);
-        max-width: 102.5%;
+        background: linear-gradient(-45deg, #660236, #9b0000, #751727, #b40347);
+        background-size: 400% 400%;
         height: 300%;
+        animation: gradient 3s ease infinite;
+        }
+        
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
     .title{
         position: absolute;
         color: rgb(133, 133, 133);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   ;
         bottom: 90%;
-        left: 30%;
+        left: 35%;
     }
 
     .menu{
@@ -390,7 +413,7 @@ a{
     }
     
     label #btn, label #close{
-        position: absolute;
+        position: fixed;
         cursor: pointer;
         display: inline-block;
         cursor: pointer;
@@ -425,6 +448,7 @@ a{
      }
      #check:checked ~ label #btn:hover{
         transition: 0.8s;
+        color: red;
         transform: rotate(180deg);
     }  
     #check:disabled label #btn:hover{
